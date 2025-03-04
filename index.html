@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <form action="#">
+        <div class="left">
+            <img src="logo_cats.png" alt="cats">
+            <h2>Language Courses</h2>
+        </div>
+        <div class="right">
+            <div class="pole">
+                <label for="name">Your name</label>
+                <input type="text" name="name" placeholder="Petukh" required>
+            </div>
+            <div class="pole">
+                <label for="sur">Your surname</label>
+                <input type="text" name="sur" placeholder="Sobakovitch" required>
+            </div>
+            <div class="pole">
+                <label for="age">Your age</label>
+                <input type="number" name="age" placeholder="127" required>
+            </div>
+            <div class="pole">
+                <label for="lan">Your native language</label>
+                <select name="lan" id="">
+                    <option value="pls">--please choose --</option>
+                    <option value="pls">Russian</option>
+                    <option value="pls">English</option>
+                    <option value="pls">Chinese</option>
+                    <option value="pls">Spanish</option>
+                    <option value="pls">Portugueese</option>
+                    <option value="pls">French</option>
+                    <option value="pls">German</option>
+                    <option value="pls">Arabic</option>
+                    <option value="pls">Other</option>
+                </select>
+            </div>
+            <div class="pole">
+                <label for="time">Time lesson</label>
+                <input type="time" name="time" placeholder="--:--" required>
+            </div>
+            <div class="pole">
+                <label for="date">Time lesson</label>
+                <input type="date" name="date" placeholder="dd.mm.yyyy" required>
+            </div>
+            <div class="big">
+                <label for="wish">Others</label>
+                <textarea name="wish" id="" cols="30" rows="10" placeholder="Write your whishes here"></textarea>
+            </div>
+            <div class="big">
+                <input type="submit" title="Send" class="send">
+            </div>
+        </div>
+        
+    </form>
 </body>
 </html>

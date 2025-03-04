@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Jersey+15&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Raleway", sans-serif;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+    border: 2px rgb(218, 184, 83) solid;
+    border-radius: 16px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.left{
+    background-color: rgb(218, 184, 83);
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    width: 70%;
+    aspect-ratio: auto;
+}
+
+label{
+    font-size: 25px;
+}
+
+input{
+    border-radius: 10px;
+    border: 1px solid #667ce6;
+    padding: 5px;
+    height: 35px;
+}
+
+select{
+    border-radius: 10px;
+    border: 1px solid #667ce6;
+    padding: 5px;
+    height: 45px;
+}
+
+.pole, .big{
+    margin: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.big{
+    width: 90%;
+}
+
+textarea{
+    border-radius: 10px;
+    border: 1px solid #667ce6;
+    padding: 5px;
+}
+
+.send{
+    border: #d8ad40 solid 2px;
+    background-color: #d8ad40;
+    color: aliceblue;
+}
+
+@media (min-width: 671px){
+    .left{
+        width: 20%;
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        margin-right: 2%;
+    }
+    .right{
+        width: 60%;
+    }
+}
+@media (max-width: 670px){
+    form{
+        flex-direction: column;
+    }
+    .left{
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+        width: fit-content;
+    }
+    .right{
+        justify-content: first baseline;
+        width: 100%;
+    }
+}
