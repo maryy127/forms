@@ -64,6 +64,7 @@ textarea{
     border-radius: 10px;
     border: 1px solid #667ce6;
     padding: 5px;
+    resize: vertical;
 }
 
 .send{
